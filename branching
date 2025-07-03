@@ -1,0 +1,65 @@
+# 🌿 Git Branching & Naming Conventions – FNR-01
+
+## 🧭 Branch Strategy
+
+This project uses a **feature-branch workflow** with a **protected `main` branch**.  
+All changes must be pushed to dedicated branches and merged via Pull Requests.
+
+---
+
+## 📌 Main Branches
+
+| Branch | Purpose |
+|--------|---------|
+| `main` | Production-ready, protected. Only merge via PR. |
+| `dev` *(optional)* | Staging or test environment (if needed). |
+
+---
+
+## 🔧 Feature Branch Naming
+
+All branches should follow the convention:
+
+<type>/<short-description>
+
+makefile
+Copy
+Edit
+
+Examples:
+feature/income-widget
+fix/rounding-error
+refactor/widget-layout
+hotfix/chart-crash
+chore/update-dependencies
+
+---
+
+## ✅ Allowed Branch Types
+
+| Type       | Usage                                               |
+|------------|-----------------------------------------------------|
+| `feature/` | New functionality (e.g. pages, components)          |
+| `fix/`     | Bug fixes                                           |
+| `refactor/`| Code restructuring without adding features          |
+| `chore/`   | Maintenance tasks (dependencies, config, cleanup)   |
+| `hotfix/`  | Urgent patch directly to `main` (use with caution)  |
+| `docs/`    | Changes to documentation                            |
+| `test/`    | Temporary or experimental branches                  |
+
+---
+
+## 🛠️ Example Workflow
+
+```bash
+# Create a new feature branch
+git checkout -b feature/pie-chart-widget
+
+# Work on your code...
+
+# Add, commit, and push
+git add .
+git commit -m "Add pie chart widget for allocation view"
+git push origin feature/pie-chart-widget
+
+# Open a Pull Request to `main`
