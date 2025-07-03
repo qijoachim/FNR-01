@@ -99,3 +99,98 @@ git commit -m "Add pie chart widget for allocation view"
 git push origin feature/pie-chart-widget
 
 # Open a Pull Request to `main`
+
+# 🛣️ Roadmap – FNR-01
+
+FNR-01 is a modular personal budgeting web app, focused on clarity, control, and customization.  
+This roadmap defines the key milestones and versions to reach a solid, usable and extensible MVP.
+
+---
+
+## ✅ v0.1.0 — MVP Local (Offline-first)
+
+🎯 Goal: Make the app usable without external services. All data stored locally.
+
+### Features:
+- [x] Dashboard with modular widgets
+- [x] Income input
+- [x] Fixed charges widget
+- [x] Budget allocations widget (% / €)
+- [x] Summary widget (total expenses, remaining)
+- [x] Pie chart visualization
+- [x] Persistent data using localStorage
+- [x] Basic responsive layout (desktop-first)
+- [x] Clean UI with Tailwind CSS
+
+---
+
+## 🚧 v0.2.0 — Settings & History
+
+🎯 Goal: Extend the app with personalization and long-term tracking.
+
+### Features:
+- [ ] `/settings` page with:
+  - [ ] Custom categories
+  - [ ] Display preferences (€, %, decimals)
+  - [ ] Widget toggles & layout reset
+- [ ] `/history` page with:
+  - [ ] Saved months list
+  - [ ] Line chart evolution
+  - [ ] Option to duplicate or delete a month
+- [ ] Month closing/switching logic
+- [ ] Export to JSON
+
+---
+
+## 🧪 v0.3.0 — Extras & UI Polish
+
+🎯 Goal: Improve UX and visual appeal.
+
+### Features:
+- [ ] Widget resizing / drag & drop with smooth UX
+- [ ] Transitions and interactions
+- [ ] Light/Dark mode toggle
+- [ ] Improved visuals for pie chart & charts
+- [ ] Accessibility improvements
+- [ ] Add favicon, meta tags, manifest
+- [ ] Add real branding (logo, colors)
+
+---
+
+## 🌐 v1.0.0 — Cloud Sync (Optional)
+
+🎯 Goal: Add authentication and cross-device sync.
+
+### Features:
+- [ ] Supabase integration
+- [ ] User authentication (email/magic link)
+- [ ] Save/load data per user in PostgreSQL
+- [ ] Restore dashboard layout & categories
+- [ ] Conflict resolution
+- [ ] Secure access with row-level security
+
+---
+
+## 📌 Future Ideas
+
+- [ ] Budget simulation module (goal saving over months)
+- [ ] Income planner for freelancers (variable income)
+- [ ] Mobile-first version
+- [ ] CSV import/export
+- [ ] Family/household mode (multi-user budgeting)
+- [ ] PWA support (offline access + installable app)
+
+---
+
+## 🧠 Development Philosophy
+
+- 💡 Simple over complex: each feature must have clear value
+- 💾 Start local, then go cloud
+- 🧩 Modular and extensible components
+- ✨ Polish comes after function
+- 📊 Real utility for real people
+
+---
+
+*Last updated: July 2025*
+
