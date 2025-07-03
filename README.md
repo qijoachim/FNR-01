@@ -38,8 +38,3 @@ L'utilisateur peut saisir ses revenus, gérer ses charges fixes, répartir son b
 - `/settings` → Catégories, préférences, configuration
 - `/history` → Visualisation de l’historique des mois précédents
 - `/login` → (optionnel) Authentification
-
----
-
-
-
